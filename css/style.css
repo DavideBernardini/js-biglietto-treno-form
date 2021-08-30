@@ -4,11 +4,11 @@
     box-sizing: border-box;
 }
 
-/* ticket info */
-.ticket_info {
+/* biglietto */
+.biglietto {
     display: none;
 }
 
-.show {
+.biglietto.mostra {
     display: block;
 }
