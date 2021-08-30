@@ -31,8 +31,9 @@ btnGenera.addEventListener('click',
             prezzo -= prezzo * 0.4;
             offerta = "Sconto Silver";
         } 
-        // Inserisco i dati nell'html
-        if ( nome == "" || !(isNaN(nome)) ) {
+        // Inserisco i dati nell'html se sono validi
+        var regNome = /^[a-zA-Z] + [a-zA-Z]+$/;
+        if ( nome == "" || !(isNaN(nome)) || !regNome.test(nome) ) {
             alert("Inserisci un nome e un cognome validi.")
         } else if ( km == "" || isNaN(km) ) {
             alert("Inserisci un valre numerico per indicare i Km da percorrere.")
