@@ -9,10 +9,10 @@
 var btnGenera = document.getElementById("generate");
 
 // evento bottone genera
-btnGenera.addEventListener("click", 
-    function () {
+btnGenera.addEventListener("click",
+        function() {
         // prendo i valori del form
-        var nameP = document.getElementById("name").value;
+        var nameP = getElementById("name").value;
         var km = parseInt(document.getElementById("km").value);
         var ageGroup = document.getElementById("age").value;
 
@@ -24,13 +24,9 @@ btnGenera.addEventListener("click",
             ticketPrice -= ticketPrice * 0.4;
         } 
     }
+    // inietto i dati nel biglietto
+    document.getElementById("passenger_name").innerHTML = nameP;
+    document.getElementById("price").innerHTML = ticketPrice;
+    // mostro il biglietto
+    document.getElementById("ticket_info").classList.add("show");
 );
-
-// inietto i dati nel biglietto
-document.getElementById("passenger_name").innerHTML = nameP;
-document.getElementById("price").innerHTML = ticketPrice;
-
-
-
-// mostro il biglietto
-document.getElementById("ticket_info").classList.add("show");
