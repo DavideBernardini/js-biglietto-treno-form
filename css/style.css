@@ -6,7 +6,7 @@
 
 /* ticket info */
 .ticket_info {
-    
+    display: none;
 }
 
 .show {
