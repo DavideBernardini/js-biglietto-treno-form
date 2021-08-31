@@ -4,6 +4,82 @@
     box-sizing: border-box;
 }
 
+/* font */
+body {
+    font-family: 'Montserrat', sans-serif;
+}
+
+/* container */
+.container {
+    height: 100vh;
+    background-color: #b91450;
+    padding-top: 20px;
+}
+
+.title {
+    text-align: center;
+    color: #fff;
+}
+
+/* form */
+.form-biglietto {
+    background-color: #fff;
+    text-align: center;
+    width: 80%;
+    margin: 20px auto;
+    padding: 30px 130px;
+    border-radius: 10px;
+    color: #b91450;
+    font-size: 15px;
+    font-weight: 500;
+}
+.form-biglietto-campi {
+    display: flex;
+    justify-content: space-evenly;
+}
+.col {
+    display: inline-block;
+}
+.form-biglietto label {
+    display: block;
+    margin-bottom: 20px;
+}
+.form-biglietto input, .form-biglietto select {
+    padding: 10px 50px;
+    text-align: center;
+    background-color: #fff;
+    border-radius: 5px;
+    border: 1px solid #b91450;
+}
+.form-biglietto input:focus-visible, .form-biglietto select:focus-visible {
+    outline: 2px solid #b91450;o
+}
+/* togliere freccie input number */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+input[type=number] {
+  -moz-appearance: textfield;
+}
+
+.form-biglietto-buttons {
+    margin-top: 50px;
+}
+#genera {
+    margin-right: 20px;
+}
+.btn {
+    padding: 6px;
+    font-weight: 600;
+    color: #b91450;
+}
+.btn:active {
+    border: 2px solid #f2a15a;
+    border-radius: 4px;
+}
+
 /* biglietto */
 .biglietto {
     display: none;

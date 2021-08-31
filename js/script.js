@@ -26,13 +26,12 @@ btnGenera.addEventListener('click',
         var offerta = "Biglietto standard";
         if ( fasciaEtà == "minorenne" ) {
             prezzo -= prezzo * 0.2;
-            offerta = "Sconto Young";
+            offerta = "Sconto Minorenne";
         } else if (fasciaEtà == "over") {
             prezzo -= prezzo * 0.4;
             offerta = "Sconto Silver";
         } 
-        // Inserisco i dati nell'html se sono validi
-        
+        // Inserisco i dati nell'html se sono validi;
         if ( nome == "" || !(isNaN(nome)) ) {
             alert("Inserisci un nome e un cognome validi.")
         } else if ( km == "" || isNaN(km) ) {
