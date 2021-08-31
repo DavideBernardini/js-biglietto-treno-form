@@ -19,7 +19,7 @@ btnGenera.addEventListener('click',
 
         // genero una numero random per la carrozza e il codice CP
         var carrozza = Math.floor((Math.random() * 9) + 1);
-        var cp = Math.floor((Math.random() * 10000) + 90000)
+        var cp = Math.floor((Math.random() * (99999 - 90000)) + 90000);
 
         // calcolo il prezzo in base alla fascia di età
         var prezzo = km * 0.21;
@@ -46,6 +46,7 @@ btnGenera.addEventListener('click',
         
         // rendo visibile il biglietto
         document.getElementById("biglietto").classList.add("mostra");
+        document.getElementById("titolo-biglietto").classList.add("mostra");
     }
 );
 

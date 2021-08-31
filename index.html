@@ -14,7 +14,7 @@
     </head>
     <body>
         <div class="container">
-            <h2 class="title">CALCOLA IL PREZZO DEL BIGLIETTO</h2>
+            <h2 class="titolo">CALCOLA IL PREZZO DEL BIGLIETTO</h2>
             <!-- form biglietto -->
             <div class="form-biglietto">
                 <div class="form-biglietto-campi">
@@ -42,13 +42,36 @@
             </div>
             <!-- /form biglietto -->
             <!-- biglietto -->
+            <h2 id="titolo-biglietto" class="titolo-biglietto">IL TUO BIGLIETTO</h2>
             <div id="biglietto" class="biglietto">
-                <div id="nome-passeggero"></div>
-                <div id="tipo-offerta"></div>
-                <div id="carrozza"></div>
-                <div id="codice-cp"></div>
-                <div id="totale-prezzo"></div>
-
+                <h3>DETTAGLIO PASSEGGERI</h3>
+                <div class="biglietto-campi">
+                    <div class="col main">
+                        <div class="etichetta">
+                            NOME PASSEGGERO 
+                            <div id="nome-passeggero"></div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="etichetta">Offerta</div>
+                        <div id="tipo-offerta"></div>
+                    </div>
+                    <div class="col">
+                        <div class="etichetta">Carrozza</div>
+                        <div id="carrozza"></div>
+                    </div>
+                    <div class="col">
+                        <div class="etichetta">Codice CP</div>
+                        <div id="codice-cp"></div>
+                    </div>
+                    <div class="col">
+                        <div class="etichetta">Costo biglietto</div>
+                        <div id="totale-prezzo"></div>
+                    </div>
+                    <div class="col">
+                        <img src="img/barcode.png" alt="barcode" class="barcode">
+                    </div>
+                </div>
             </div>
             <!-- /biglietto -->
 

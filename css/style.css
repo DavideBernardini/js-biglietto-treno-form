@@ -16,7 +16,7 @@ body {
     padding-top: 20px;
 }
 
-.title {
+.titolo, .titolo-biglietto {
     text-align: center;
     color: #fff;
 }
@@ -32,12 +32,13 @@ body {
     color: #b91450;
     font-size: 15px;
     font-weight: 500;
+    box-shadow: 0 0 8px 0 #444444;
 }
 .form-biglietto-campi {
     display: flex;
     justify-content: space-evenly;
 }
-.col {
+.form-biglietto-campi .col {
     display: inline-block;
 }
 .form-biglietto label {
@@ -52,7 +53,7 @@ body {
     border: 1px solid #b91450;
 }
 .form-biglietto input:focus-visible, .form-biglietto select:focus-visible {
-    outline: 2px solid #b91450;o
+    outline: 2px solid #b91450;
 }
 /* togliere freccie input number */
 input::-webkit-outer-spin-button,
@@ -84,7 +85,49 @@ input[type=number] {
 .biglietto {
     display: none;
 }
-
+.titolo-biglietto {
+    display: none;
+}
+.titolo-biglietto.mostra {
+    display: block;
+    margin: 30px 0 10px;
+}
 .biglietto.mostra {
     display: block;
+    padding: 20px;
+    background-color: #fff;
+    margin: auto;
+    width: 80%;
+    box-shadow: 0 0 2px 0 #444444;
+}
+.biglietto-campi {
+    display: flex;
+    width: 100%;
+    margin-top: 10px;
+}
+.biglietto-campi .col {
+    height: 125px;
+    padding: 0 25px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    border-top: 1px solid #000;
+    border-bottom: 1px solid #000;
+}
+/* .biglietto-campi .col:last-child {
+    flex-grow: 1;
+} */
+.etichetta {
+    font-weight: 600;
+}
+.col.main {
+    display: inline-block;
+    background-color: #808080;
+}
+.col.main .etichetta {
+    margin-top: 20px;
+    font-size: 18px;
+}
+.barcode {
+    height: 85%;
 }
